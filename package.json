@@ -1,0 +1,27 @@
+{
+  "name": "greenclean",
+  "version": "1.0.0",
+  "description": "business case",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass style/style.scss style/style.css",
+    "sass": "sass --watch ./Documents/pressing/business_case/style.scss:./Documents/pressing/business_case/style.css",
+    "prefix": "postcss ./site-c/newstyle.css --use autoprefixer -d ./site-c"
+  },
+  "author": "Cécilia Fornès-Guechi",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kayliyah/business_case.git"
+  },
+  "keywords": [
+    "pressing",
+    "connected",
+    "green"
+  ],
+  "bugs": {
+    "url": "https://github.com/Kayliyah/business_case/issues"
+  },
+  "homepage": "https://github.com/Kayliyah/business_case#readme"
+}
