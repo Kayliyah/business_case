@@ -1,3 +1,12 @@
-body {
-    background-color: black;
+$grey: #e6e6e6;
+$dark_green: #005740;
+$medium_green: #00C893;
+$light_green: #E5FFF8;
+$medium_green_opacity: #00C89380;
+$dark_purple: #424CFF;
+$medium_purple: #999EFF;
+$light_purple: #CCCFFF;
+
+body, html {
+    background-color: $grey;
 }

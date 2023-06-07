@@ -1,0 +1,124 @@
+$grey: #e6e6e6;
+$dark_green: #005740;
+$medium_green: #00C893;
+$light_green: #E5FFF8;
+$medium_green_opacity: #00C89380;
+$dark_purple: #424CFF;
+$medium_purple: #999EFF;
+$light_purple: #CCCFFF;
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.logo_name {
+    height: 50px;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    
+
+    & > ul {
+        display: flex;
+        flex-direction: row;
+
+        & > li {
+            list-style: none;
+
+            & > a {
+                color: $dark_green;
+                text-decoration: none;
+                padding: 8%;
+                border-radius: 45px;
+                margin: 0 10px;            
+
+                &:hover {
+                    color: #fff;
+                    background-color: $dark_purple;
+                }
+            }
+        
+            & > ul > li {
+                list-style: none;
+
+                & > a {
+                    color: $dark_green;
+                    text-decoration: none;
+                    background-color: $light_green;
+                    padding: 10px;
+                    border-radius: 45px;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: $dark_purple;
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+.cart {
+    height: 50px;
+    padding: 10px 0;
+}
+
+.search {
+    height: 50px;
+    border: 2px solid $dark_purple;
+    border-radius: 45px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+
+    & > input {
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        padding: 10px;
+
+        &:focus {
+            border-radius: 45px;
+        }
+    }
+
+    & > button {
+        background-color: transparent;
+        border: none;
+
+        & > img {
+            height: 30px;
+            padding: 10px;
+        }
+    }
+}
+
+.login_connect {
+
+    & > a:first-child {
+        background-color: $dark_purple;
+        color: #fff;
+        padding: 10px;
+        border-radius: 45px;
+        text-decoration: none;
+    }
+
+    & > a:last-child {
+        background-color: $light_purple;
+        color: $dark_green;
+        padding: 10px;
+        border-radius: 45px;
+        text-decoration: none;
+    }
+}
+
