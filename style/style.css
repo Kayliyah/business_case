@@ -5,6 +5,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "helgolandregular";
+  src: url("/typo/helgoland-webfont.eot");
+  src: url("/typo/helgoland-webfont.eot?#iefix") format("embedded-opentype"), url("/typo/helgoland-webfont.woff2") format("woff2"), url("/typo/helgoland-webfont.woff") format("woff"), url("/typo/helgoland-webfont.ttf") format("truetype"), url("/typo/helgoland-webfont.svg#helgolandregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 html, body {
   padding: 0;
   margin: 0;
@@ -12,6 +19,7 @@ html, body {
 
 body, html {
   background-color: #e6e6e6;
+  font-family: "Reem Kufi", sans-serif;
 }
 
 header {
@@ -19,9 +27,13 @@ header {
   height: 70px;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   font-family: "Reem Kufi", sans-serif;
+  background-color: #e6e6e6;
+  position: fixed;
+  top: 0;
 }
 
 .logo_name {
@@ -78,6 +90,9 @@ nav > ul > li > ul > li > a:hover {
   margin: 10px;
   display: flex;
   align-items: center;
+  min-width: 150px;
+  max-width: 275px;
+  width: auto;
 }
 .search > input {
   height: 30px;
@@ -110,4 +125,173 @@ nav > ul > li > ul > li > a:hover {
   padding: 10px;
   border-radius: 45px;
   text-decoration: none;
+}
+
+footer {
+  background: linear-gradient(93.93deg, #005740 0%, #424CFF 27.08%, #999EFF 61.98%, #00C893 100%);
+  width: 100%;
+  padding: 0 auto;
+}
+footer > .row_1 {
+  display: flex;
+  flex-direction: row;
+  margin: 0 10%;
+}
+footer > .row_1 > img {
+  height: 20vh;
+  margin: 10%;
+}
+footer > .row_1 > .connect_with_us {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 10%;
+}
+footer > .row_1 > .connect_with_us > h2 {
+  font-family: "helgolandregular";
+  font-size: 3em;
+  color: #fff;
+  margin: 0;
+}
+footer > .row_1 > .connect_with_us > p {
+  color: #fff;
+}
+footer > .row_1 > .connect_with_us > div > label {
+  color: #fff;
+  margin-left: 10px;
+}
+footer > .row_1 > .connect_with_us > div > label > div {
+  height: 38px;
+  background-color: #fff;
+  border-radius: 45px;
+  border: 1px solid #fff;
+}
+footer > .row_1 > .social_medias {
+  display: flex;
+  flex-direction: column;
+  width: 75px;
+}
+footer > .row_1 > .social_medias > .instagram > img, footer > .row_1 > .social_medias .facebook > img, footer > .row_1 > .social_medias .linkedin > img {
+  width: 75px;
+  justify-content: center;
+  filter: invert(100%);
+}
+footer > .row_1 > .social_medias > .instagram > a, footer > .row_1 > .social_medias .facebook > a, footer > .row_1 > .social_medias .linkedin > a {
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+}
+footer > .row_1 > .contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.address_logo {
+  margin: 100px 10% 0 10%;
+  width: 100%;
+  display: flex;
+}
+.address_logo section > p {
+  background-color: #CCCFFF;
+  width: 18%;
+  padding: 40px 40px;
+  border-radius: 45px;
+  font-size: 2em;
+  color: #005740;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.address_logo section > img {
+  width: 100%;
+}
+
+.title {
+  width: 80%;
+  height: 12vh;
+  margin: 10%;
+  overflow: hidden;
+}
+.title > h1 {
+  font-weight: 400;
+  font-size: 3vw;
+  color: #005740;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.title > h1 > div {
+  font-family: "foglihtenno07regular";
+  font-size: 10vh;
+  margin: 0;
+  padding: 0;
+  color: #999EFF;
+}
+
+.cta {
+  text-align: center;
+  background: linear-gradient(93.93deg, #005740 0%, #424CFF 27.08%, #999EFF 61.98%, #00C893 100%);
+  border-radius: 45px;
+  padding: 100px;
+  width: 60%;
+  margin: auto;
+}
+.cta > p {
+  text-align: center;
+}
+.cta > p > a {
+  font-family: "helgolandregular";
+  color: #fff;
+  text-decoration: none;
+  font-size: 3em;
+  width: 60%;
+  padding: 100px;
+  margin: auto;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+}
+.cards > div {
+  width: 26%;
+  margin: 50px auto;
+  background-color: #CCCFFF;
+  padding: 3%;
+  border-radius: 45px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+}
+.cards > div > img {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  justify-content: center;
+}
+.cards > div > h2 {
+  font-family: "Helgolandregular";
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
+.cards > div > p {
+  font-size: 1em;
+  color: #005740;
+}
+.cards > div > a {
+  font-family: "helgolandregular";
+  width: 100%;
+  background: linear-gradient(93.93deg, #005740 0%, #424CFF 27.08%, #999EFF 61.98%, #00C893 100%);
+  padding: 10px;
+  border-radius: 45px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 auto;
+  align-items: flex-end;
 }/*# sourceMappingURL=style.css.map */

@@ -9,3 +9,16 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'helgolandregular';
+    src: url('/typo/helgoland-webfont.eot');
+    src: url('/typo/helgoland-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/typo/helgoland-webfont.woff2') format('woff2'),
+         url('/typo/helgoland-webfont.woff') format('woff'),
+         url('/typo/helgoland-webfont.ttf') format('truetype'),
+         url('/typo/helgoland-webfont.svg#helgolandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
